@@ -7,6 +7,7 @@ function getWeather() {
 	function error() {
 		//Warszawa
 		loadWeather(52.2048418 +','+ 20.911452);
+		$('.error').html('<p> You not allowed to geolocation. Warsaw is  a default location.</p>')
 	};
 
 	navigator.geolocation.getCurrentPosition(success, error);
