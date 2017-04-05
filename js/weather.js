@@ -6,8 +6,8 @@ function getWeather() {
 
 	function error() {
 		//Warszawa
-		loadWeather("Warsaw, PL");
-		$('.error').html('<p> You not allowed to geolocation. Warsaw is  a default location.</p>')
+		loadWeather("Malbork, PL");
+		$('.error').html('<p> You not allowed to geolocation. Malbork is  a default location.</p>')
 	};
 
 	navigator.geolocation.getCurrentPosition(success, error);
